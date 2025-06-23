@@ -1,0 +1,29 @@
+[
+  {
+    "ContainingType": "PaletaCores.Controllers.PaletaCoresController",
+    "Method": "Get",
+    "RelativePath": "PaletaCores",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "GetPaletaCores"
+  },
+  {
+    "ContainingType": "PaletaCores.Controllers.PaletaCoresController",
+    "Method": "GetPorNome",
+    "RelativePath": "PaletaCores/{nomePaleta}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nomePaleta",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
