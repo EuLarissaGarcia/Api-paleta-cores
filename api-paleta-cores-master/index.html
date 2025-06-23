@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleta de Cores</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+<body>
+    <div class="main-layout">
+        <div class="colors-container">
+            <div class="color-showcase">
+                <h2>
+                    <i class="ri-palette-fill"></i>
+                    Paleta de Cores
+                </h2>
+                <div class="color-palette" id="color-palette">
+                    <div class="color-card">
+                        <div class="color-preview" id="preview-primaria"
+                            style="background-color: var(--cor-primaria, #667eea);" title="Clique para copiar a cor">
+                        </div>
+                        <div class="color-info">
+                            <div class="color-label">Primária</div>
+                            <div class="color-value" id="cor-primaria" title="Clique para copiar">---</div>
+                        </div>
+                    </div>
+
+                    <div class="color-card">
+                        <div class="color-preview" id="preview-secundaria"
+                            style="background-color: var(--cor-secundaria, #764ba2);" title="Clique para copiar a cor">
+                        </div>
+                        <div class="color-info">
+                            <div class="color-label">Secundária</div>
+                            <div class="color-value" id="cor-secundaria" title="Clique para copiar">---</div>
+                        </div>
+                    </div>
+
+                    <div class="color-card">
+                        <div class="color-preview" id="preview-extra"
+                            style="background-color: var(--cor-extra, #2d3748);" title="Clique para copiar a cor"></div>
+                        <div class="color-info">
+                            <div class="color-label">Extra</div>
+                            <div class="color-value" id="cor-extra" title="Clique para copiar">---</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-container">
+            <div>
+                <div class="header">
+                    <i class="ri-palette-line header-icon"></i>
+                    <h1>Temas Incríveis</h1>
+                    <p>Troque e descubra a magia</p>
+                </div>
+
+                <div class="theme-status">
+                    <span id="theme-name" class="color-black">
+                        <i class="ri-question-line"></i>
+                        Nenhuma paleta carregada
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <form id="paletaForm">
+                    <div class="form-group">
+                        <label for="nome-paleta">Nome da Paleta</label>
+                        <div class="input-wrapper">
+                            <i class="ri-search-line input-icon"></i>
+                            <input type="text" id="nome-paleta" placeholder="Ex: ocean, dark, pastel" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="ri-search-line"></i>
+                        Buscar Paleta
+                    </button>
+                </form>
+
+                <div class="divider">ou</div>
+
+                <button id="btn-aleatorio" class="btn btn-primary">
+                    <i class="ri-shuffle-line"></i>
+                    Gerar Tema Aleatório
+                </button>
+
+                <button id="btn-cores-aleatorias" class="btn btn-random">
+                    <i class="ri-magic-line"></i>
+                    Cores Totalmente Aleatórias
+                </button>
+
+                <button id="btn-opcoes" class="btn btn-secondary">
+                    <i class="ri-list-check"></i>
+                    Ver Opções Disponíveis
+                </button>
+
+                <div id="options-list" class="options-list">
+                    <h3>
+                        <i class="ri-palette-line"></i>
+                        Paletas Disponíveis
+                    </h3>
+                    <div class="options-grid">
+                        <button class="btn btn-small" data-theme="ocean">Ocean</button>
+                        <button class="btn btn-small" data-theme="summer">Summer</button>
+                        <button class="btn btn-small" data-theme="dark">Dark Green</button>
+                        <button class="btn btn-small" data-theme="bege">Bege</button>
+                        <button class="btn btn-small" data-theme="florest">Florest</button>
+                        <button class="btn btn-small" data-theme="pastel">Pastel</button>
+                        <button class="btn btn-small" data-theme="jade">Jade</button>
+                        <button class="btn btn-small" data-theme="twilight">Twilight</button>
+                        <button class="btn btn-small" data-theme="barbie">Barbie</button>
+                        <button class="btn btn-small" data-theme="classic">Classic</button>
+                        <button class="btn btn-small" data-theme="veneno">Veneno</button>
+                        <button class="btn btn-small" data-theme="scarlet">Scarlet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
